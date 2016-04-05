@@ -11,6 +11,9 @@ function MainScene:ctor()
  --        :addTo(self)
 
  	-- display.newColorLayer(ccc4(255,255,255,255)):addTo(self)
+ 	display.newSprite("background.png")
+ 		:pos(display.cx, display.cy)
+ 		:addTo(self)
 
  	cc.ui.UIPushButton.new("Button01.png", {scale9 = true})
  		:setButtonSize(160, 60)
