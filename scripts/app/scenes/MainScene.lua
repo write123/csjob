@@ -13,8 +13,8 @@ function MainScene:ctor()
  	-- display.newColorLayer(ccc4(255,255,255,255)):addTo(self)
 
  	cc.ui.UIPushButton.new("Button01.png", {scale9 = true})
- 		:setButtonSize(160, 80)
- 		:setButtonLabel(cc.ui.UILabel.new({text = "start"}))
+ 		:setButtonSize(160, 60)
+ 		:setButtonLabel(cc.ui.UILabel.new({text = "开始游戏"}))
  		:pos(display.cx, display.cy)
  		:addTo(self)
 end
