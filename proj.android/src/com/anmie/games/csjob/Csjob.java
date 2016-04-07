@@ -24,50 +24,21 @@ THE SOFTWARE.
 package com.anmie.games.csjob;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
-import org.cocos2dx.lib.Cocos2dxLuaJavaBridge;
+import org.cocos2dx.utils.PSNative;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 public class Csjob extends Cocos2dxActivity {
 
-	static private Csjob s_instance;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		s_instance = this;
+		PSNative.init(this);
 	}
 
     static {
     	System.loadLibrary("game");
     }
     
-    static public void showAlertDialog(final String title,
-            final String message, final int luaCallbackFunction) {
-        s_instance.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                AlertDialog alertDialog = new AlertDialog.Builder(s_instance).create();
-                alertDialog.setTitle(title);
-                alertDialog.setMessage(message);
-                alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        s_instance.runOnGLThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Cocos2dxLuaJavaBridge.callLuaFunctionWithString(luaCallbackFunction, "CLICKED");
-                                Cocos2dxLuaJavaBridge.releaseLuaFunction(luaCallbackFunction);
-                            }
-                        });
-                    }
-                });
-                alertDialog.setIcon(R.drawable.icon);
-                alertDialog.show();
-            }
-        });
-    }
 }

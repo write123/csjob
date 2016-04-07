@@ -45,20 +45,23 @@ function MenuScene:ctor()
         end)
  		:addTo(self)
 
-local function onButtonClicked(event)
-    if event.buttonIndex == 1 then
-        os.exit()
-    else
-        device.cancelAlert()
-    end
-end
+		local function onButtonClickedEvent(event)
+		    if event.buttonIndex == 1 then
+		        os.exit()
+		    end
+		end
 
  	cc.ui.UIPushButton.new("Button01.png", {scale9 = true})
  		:setButtonSize(160, 60)
  		:setButtonLabel(cc.ui.UILabel.new({text = "退出"}))
  		:pos(display.cx, display.cy - 60 - 60)
  		:onButtonClicked(function()
-			device.showAlert("Confirm Exit", "Are you sure exit game ?", {"YES", "NO"}, onButtonClicked)
+			device.showAlert(
+				"确认", 
+				"确认要退出游戏吗?", 
+				{"是", "否"}, 
+				function (e) if e.buttonIndex == 1 then os.exit() end end
+				)
  			end)
  		:onButtonPressed(function(event)
             event.target:setScale(1.1)
