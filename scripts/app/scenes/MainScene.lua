@@ -1,13 +1,16 @@
 local curLabel = nil
 local totalLabel = nil
-local cur = 1
-local total = 20
+local cur = nil
+local total = nil
 
 local MainScene = class("MainScene", function()
     return display.newScene("MainScene")
 end)
 
 function MainScene:ctor()
+
+	self.cur = 1
+	self.total = 20
 
  	-- display.newColorLayer(ccc4(255,255,255,255)):addTo(self)
  	display.newSprite("background.png")
@@ -45,31 +48,73 @@ function MainScene:ctor()
             event.target:setScale(1.0)
         end)
  		:addTo(self)
+end
+
+function MainScene:reflush()
+	local json = require("framework.shared.json")
+
+
 
 end
 
+local function callback(event)  
+    local ok = (event.name == "completed")  
+    local request = event.request  
+    local response = request:getResponseString()  
+     print(response)  
+    local json=require("framework.shared.json")  
+    local t=json.decode(response)  
+    print(t)  
+end
+
+
 function MainScene:initTopLabel()
-    ui.newTTFLabel({text = "当前第", size = 24, align = ui.TEXT_ALIGN_CENTER})
+    ui.newTTFLabel({
+    	text = "当前第", 
+    	size = 24, 
+    	align = ui.TEXT_ALIGN_CENTER
+    	})
         :pos(display.left + 120, display.top - 40)
         :addTo(self)
 
-    local curLabel = ui.newTTFLabel({text = cur, color = ccc3(255,0,0), size = 24, align = ui.TEXT_ALIGN_CENTER})
-        :pos(display.left + 150, display.top - 40)
+    local curLabel = ui.newTTFLabel({
+    	text = self.cur,
+    	color = ccc3(255,0,0), 
+    	size = 24, 
+    	align = ui.TEXT_ALIGN_CENTER
+    	})
+        :pos(display.left + 160, display.top - 40)
         :addTo(self)
 
-    ui.newTTFLabel({text = "题", size = 24, align = ui.TEXT_ALIGN_CENTER})
+    ui.newTTFLabel({
+    	text = "题", 
+    	size = 24, 
+    	align = ui.TEXT_ALIGN_CENTER
+    	})
         :pos(display.left + 180, display.top - 40)
         :addTo(self)
 
-    ui.newTTFLabel({text = "共", size = 24, align = ui.TEXT_ALIGN_CENTER})
+    ui.newTTFLabel({
+    	text = "共", 
+    	size = 24, 
+    	align = ui.TEXT_ALIGN_CENTER
+    	})
         :pos(display.right - 180, display.top - 40)
         :addTo(self)
 
-    ui.newTTFLabel({text = total, color = ccc3(255,0,0) size = 24, align = ui.TEXT_ALIGN_CENTER})
-        :pos(display.right - 150, display.top - 40)
-        :addTo(self)
+    ui.newTTFLabel({
+    		text = self.total, 
+    		color = ccc3(255,0,0), 
+    		size = 24, 
+    		align = ui.TEXT_ALIGN_CENTER
+    }):pos(display.right - 150, display.top - 40)
+      :addTo(self)
 
-    ui.newTTFLabel({text = "题", size = 24, align = ui.TEXT_ALIGN_CENTER})
+    ui.newTTFLabel({
+    	text = "题", 
+    	size = 24, 
+    	align = ui.TEXT_ALIGN_CENTER
+    	})
         :pos(display.right - 120, display.top - 40)
         :addTo(self)
 end

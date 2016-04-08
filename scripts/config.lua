@@ -23,3 +23,6 @@ CONFIG_SCREEN_HEIGHT = 640
 
 -- auto scale mode
 CONFIG_SCREEN_AUTOSCALE = "FIXED_HEIGHT"
+
+-- server name
+GAME_CONFIG_SERVER  = "http://local.com"

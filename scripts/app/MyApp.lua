@@ -17,44 +17,21 @@ end
 function MyApp:run()
     CCFileUtils:sharedFileUtils():addSearchPath("res/")
 	self:setFont()
+
+	local function requestComplete(event)
+		print(event)
+	    local ok = (event.name == "completed")
+	    local request = event.request  
+	    local response = request:getResponseString()  
+	    print(response)
+	    local json = require("framework.json")  
+	    local t = json.decode(response)  
+	    print(t)
+	end
+
+	local request = network.createHTTPRequest(requestComplete, GAME_CONFIG_SERVER .."/json.php", "POST")  
+	request:start()
     self:enterScene("MenuScene")
 end
-
-function MyApp:readCache()
-	if io.exists(configFile) then 
-		local str = io.readfile(configFile)
-		if str then
-			return loadstring(str)
-		end
-	end
-	return nil
-end
-
-function MyApp:writeCache(str)
-	io.writefile(configFile, str)
-end
-
-function MyApp:showAlert(title, message, buttonLabels, listener)
-    if device.platform ~= "android" then
-        print("please run this on android device")
-        return
-    end
-
-    device.showAlert(title, message, buttonLabels, listener)
-
-    -- call Java method
-    local javaClassName = "org/anmie/games/csjob/Csjob"
-    local javaMethodName = "showAlertDialog"
-    local javaParams = {
-        "How are you ?",
-        "I'm great !",
-        function(event)
-            printf("Java method callback value is [%s]", event)
-        end
-    }
-    local javaMethodSig = "(Ljava/lang/String;Ljava/lang/String;I)V"
-    luaj.callStaticMethod(javaClassName, javaMethodName, javaParams, javaMethodSig)
-end
-
 
 return MyApp
