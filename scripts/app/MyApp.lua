@@ -16,6 +16,7 @@ end
 
 function MyApp:run()
     CCFileUtils:sharedFileUtils():addSearchPath("res/")
+
 	self:setFont()
 
 	local function requestComplete(event)
@@ -29,9 +30,18 @@ function MyApp:run()
 	    print(t)
 	end
 
-	local request = network.createHTTPRequest(requestComplete, GAME_CONFIG_SERVER .."/json.php", "POST")  
-	request:start()
+	-- local request = network.createHTTPRequest(requestComplete, GAME_CONFIG_SERVER .."/json.php", "POST")  
+	-- request:start()
     self:enterScene("MenuScene")
+end
+
+function MyApp:loadJsonFile(jsonFile)
+	local fileUtil = cc.FileUtils:getInstance()
+	local fullPath = fileUtil:fullPathForFilename(jsonFile)
+	local jsonStr = fileUtil:getStringFromFile(fullPath)
+	local jsonVal = json.decode(jsonStr)
+
+	return jsonVal
 end
 
 return MyApp

@@ -1,4 +1,3 @@
-
 local MenuScene = class("MenuScene", function()
     return display.newScene("MenuScene")
 end)
