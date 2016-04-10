@@ -1,0 +1,62 @@
+1.创建菜单,并返回CCMenu对象.
+2.创建一个图像菜单项,并返回CCMenuItemSprite对象.
+	eg:
+	-- image: 正常状态的按钮图像
+	-- imageSelected: 按钮按下时的图像(可选)
+	-- imageDisabled: 按钮被禁用时的图像(可选)
+	-- listener: 回调函数
+	-- tag: 按钮的tag, 会传入回调函数, 多个按钮使用同一个回调函数时, 可根据 Tag 区分哪一个按钮被按下 (可选)
+	-- x,y:坐标(可选)
+	-- sound: 按钮按下时播放什么音效(可选)
+	
+	local function onButtonClicked(tag)
+		-- 按钮被按下
+	end
+	
+	local item = ui.newImageMenuItem({
+		image = "Button.png",
+		imageSelected = "ButtonSelected.png",
+		listener = onButtonClicked
+	})
+	
+	local menu = ui.newMenu({item})
+	scene:addChild(menu)
+	
+3. 创建一个文字菜单项, 并返回 CCMenuItemLabel 对象.
+	eg:
+		-- listener:回调函数
+		-- tag: 按钮的tag, 会传入回调函数.
+		-- x,y: 坐标
+		-- sound: 按钮按下时播放什么音效
+		-- + ui.newTTFLabel()所有可用的参数
+		local item = ui.newTTFLabelMenuItem({...})
+		local menu = ui.newMenu({item})
+		
+4. 使用 TTF 字体创建文字显示对象, 并返回 CCLabelTTF 对象.
+	eg:
+		-- text : 要显示的文本
+		-- font : 字体名
+		-- size : 字体尺寸
+		-- color : 文字颜色, 可用 ccc3() 指定, 默认为白色
+		-- align : 文字的水平对齐方式
+		-- valign: 文字的垂直对齐方式, 仅指定了 dimensions 参数时才有效
+		-- dimensions : 文字显示对象的尺寸, 使用 CCSize() 指定
+		-- x,y 坐标 
+		
+		align 和 valign参数可用的值:
+		-- ui.TEXT_ALIGN_LEFT 左对齐
+		-- ui.TEXT_ALIGN_CENTER 水平居中对齐
+		-- ui.TEXT.ALGIN_RIGHT 右对齐
+		-- ui.TEXT_VALIGN_TOP 垂直顶部对齐
+		-- ui.TEXT_VALIGN_CENTER 垂直居中对齐
+		-- ui.TEXT_VALIGN_BOTTOM 垂直底部对齐
+		
+		local label = ui.newTTFLabel({
+			text = "hello\n世界",
+			font = "Arial"
+			size = 64,
+			color = ccc3(255,0,0)
+			align = ui.TEXT_ALIGN_LEFT,
+			valign = ui.TEXT_VALIGN_TOP,
+			dimensions = CCSize(400,200)
+		})

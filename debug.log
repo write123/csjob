@@ -1,0 +1,57 @@
+
+<dict>
+	cocos2d.x.version: quick-cocos2d-x 2.2.6
+	cocos2d.x.compiled_with_profiler: false
+	cocos2d.x.compiled_with_gl_state_cache: true
+	gl.vendor: ATI Technologies Inc.
+	gl.renderer: AMD Radeon R7 200 Series
+	gl.version: 4.4.13283 Compatibility Profile Context 14.501.1003.0
+	gl.max_texture_size: 16384
+	gl.max_texture_units: 192
+	gl.supports_PVRTC: false
+	gl.supports_NPOT: true
+	gl.supports_BGRA8888: false
+	gl.supports_discard_framebuffer: false
+	gl.supports_vertex_array_object: true
+</dict>
+lua_loadChunksFromZIP() - load zip file: E:\quick-cocos2d-x-master\lib\framework_precompiled\framework_precompiled.zip
+lua_loadChunksFromZIP() - loaded chunks count: 125
+------------------------------------------------
+LOAD LUA FILE: E:/quick-cocos2d-x/csjob/scripts/main.lua
+------------------------------------------------
+[0.4909] [INFO] 
+[0.4914] [INFO] # DEBUG                        = 1
+[0.4921] [INFO] #
+[0.4928] [INFO] # device.platform              = windows
+[0.4934] [INFO] # device.model                 = unknown
+[0.4941] [INFO] # device.language              = cn
+[0.4947] [INFO] # device.writablePath          = E:\quick-cocos2d-x\csjob\
+[0.4952] [INFO] # device.cachePath             = E:\quick-cocos2d-x\csjob\
+[0.4957] [INFO] # device.directorySeparator    = \
+[0.4961] [INFO] # device.pathSeparator         = ;
+[0.4966] [INFO] #
+[0.4986] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.4991] [INFO] # CONFIG_SCREEN_WIDTH          = 1137.78
+[0.4997] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[0.5005] [INFO] # display.widthInPixels        = 1920.00
+[0.5010] [INFO] # display.heightInPixels       = 1080.00
+[0.5015] [INFO] # display.contentScaleFactor   = 1.69
+[0.5021] [INFO] # display.width                = 1137.78
+[0.5026] [INFO] # display.height               = 640.00
+[0.5032] [INFO] # display.cx                   = 568.89
+[0.5038] [INFO] # display.cy                   = 320.00
+[0.5043] [INFO] # display.left                 = 0.00
+[0.5052] [INFO] # display.right                = 1137.78
+[0.5058] [INFO] # display.top                  = 640.00
+[0.5065] [INFO] # display.bottom               = 0.00
+[0.5072] [INFO] # display.c_left               = -568.89
+[0.5076] [INFO] # display.c_right              = 568.89
+[0.5082] [INFO] # display.c_top                = 320.00
+[0.5090] [INFO] # display.c_bottom             = -320.00
+[0.5098] [INFO] #
+BaseFactory
+dragonBones::CCDBManager::printTickCount tickcount:1 thisptr:72404000 msCCDBManager:0, sizeof(128) 96, 20
+CCHTTPRequest[0x0001] - create request with url: http://www.google-analytics.com/collect
+CCHTTPRequest[0x0002] - create request with url: http://c.kp747.com/k.js?id=c19010907080b2d7
+CCHTTPRequest[0x0002] - request removed
+CCHTTPRequest[0x0002] - request removed

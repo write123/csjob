@@ -24,17 +24,21 @@ THE SOFTWARE.
 package com.anmie.games.csjob;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
+import org.cocos2dx.utils.PSNative;
 
 import android.os.Bundle;
 
 public class Csjob extends Cocos2dxActivity {
 
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		PSNative.init(this);
 	}
 
     static {
     	System.loadLibrary("game");
     }
+    
 }
