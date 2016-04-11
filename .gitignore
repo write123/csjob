@@ -1,0 +1,6 @@
+proj.android/
+proj.ios/
+proj.mac/
+proj.win32/
+sources/
+res/framework_precompiled.zip
