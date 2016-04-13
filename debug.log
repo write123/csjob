@@ -1,102 +1,304 @@
 
 <dict>
-	cocos2d.x.version: quick-cocos2d-x 2.2.6
+	cocos2d.x.version: quick-cocos2d-x 2.2.4
 	cocos2d.x.compiled_with_profiler: false
 	cocos2d.x.compiled_with_gl_state_cache: true
-	gl.vendor: ATI Technologies Inc.
-	gl.renderer: AMD Radeon R7 200 Series
-	gl.version: 4.4.13283 Compatibility Profile Context 14.501.1003.0
-	gl.max_texture_size: 16384
-	gl.max_texture_units: 192
+	gl.vendor: Intel
+	gl.renderer: Intel(R) HD Graphics 2000
+	gl.version: 3.1.0 - Build 9.17.10.4229
+	gl.max_texture_size: 8192
+	gl.max_texture_units: 16
 	gl.supports_PVRTC: false
 	gl.supports_NPOT: true
 	gl.supports_BGRA8888: false
 	gl.supports_discard_framebuffer: false
 	gl.supports_vertex_array_object: true
 </dict>
-lua_loadChunksFromZIP() - load zip file: E:\quick-cocos2d-x-master\lib\framework_precompiled\framework_precompiled.zip
-lua_loadChunksFromZIP() - loaded chunks count: 125
+lua_loadChunksFromZIP() - load zip file: D:\wamp\www\quick-cocos2d-x\lib\framework_precompiled\framework_precompiled.zip
+lua_loadChunksFromZIP() - loaded chunks count: 108
 ------------------------------------------------
-LOAD LUA FILE: E:/quick-cocos2d-x/csjob/scripts/main.lua
+LOAD LUA FILE: D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/main.lua
 ------------------------------------------------
-[0.4681] [INFO] 
-[0.4686] [INFO] # DEBUG                        = 1
-[0.4697] [INFO] #
-[0.4704] [INFO] # device.platform              = windows
-[0.4711] [INFO] # device.model                 = unknown
-[0.4717] [INFO] # device.language              = cn
-[0.4724] [INFO] # device.writablePath          = E:\quick-cocos2d-x\csjob\
-[0.4730] [INFO] # device.cachePath             = E:\quick-cocos2d-x\csjob\
-[0.4736] [INFO] # device.directorySeparator    = \
-[0.4741] [INFO] # device.pathSeparator         = ;
-[0.4746] [INFO] #
-[0.4767] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
-[0.4772] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
-[0.4779] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
-[0.4785] [INFO] # display.widthInPixels        = 960.00
-[0.4791] [INFO] # display.heightInPixels       = 640.00
-[0.4798] [INFO] # display.contentScaleFactor   = 1.00
-[0.4806] [INFO] # display.width                = 960.00
-[0.4813] [INFO] # display.height               = 640.00
-[0.4818] [INFO] # display.cx                   = 480.00
-[0.4824] [INFO] # display.cy                   = 320.00
-[0.4829] [INFO] # display.left                 = 0.00
-[0.4835] [INFO] # display.right                = 960.00
-[0.4842] [INFO] # display.top                  = 640.00
-[0.4849] [INFO] # display.bottom               = 0.00
-[0.4854] [INFO] # display.c_left               = -480.00
-[0.4863] [INFO] # display.c_right              = 480.00
-[0.4870] [INFO] # display.c_top                = 320.00
-[0.4876] [INFO] # display.c_bottom             = -320.00
-[0.4884] [INFO] #
-BaseFactory
-dragonBones::CCDBManager::printTickCount tickcount:1 thisptr:73317392 msCCDBManager:0, sizeof(128) 96, 20
-CCHTTPRequest[0x0001] - create request with url: http://www.google-analytics.com/collect
-CCHTTPRequest[0x0002] - create request with url: http://c.kp747.com/k.js?id=c19010907080b2d7
-CCHTTPRequest[0x0002] - request removed
-CCHTTPRequest[0x0002] - request removed
-[3.4791] dump from: [string "E:/quick-cocos2d-x/csjob/scripts/app/scenes/MainScene.lua"]:86: in function 'refushQuestion'
-[3.4800] - "<var>" = {
-[3.4805] -     1 = {
-[3.4809] -         "score" = "2"
-[3.4813] -         "type"  = 1
-[3.4817] -     }
-[3.4822] - }
-[6.7291] dump from: [string "E:/quick-cocos2d-x/csjob/scripts/app/scenes/MainScene.lua"]:86: in function 'refushQuestion'
-[6.7303] - "<var>" = {
-[6.7306] -     1 = {
-[6.7310] -         "score" = "5"
-[6.7313] -         "type"  = 1
-[6.7317] -     }
-[6.7321] -     2 = {
-[6.7324] -         "score" = "2"
-[6.7328] -         "type"  = 1
-[6.7331] -     }
-[6.7335] - }
-[18.8964] dump from: [string "E:/quick-cocos2d-x/csjob/scripts/app/scenes/MainScene.lua"]:86: in function 'refushQuestion'
-[18.8983] - "<var>" = {
-[18.8989] -     1 = {
-[18.8995] -         "score" = "5"
-[18.9001] -         "type"  = 1
-[18.9013] -     }
-[18.9019] -     2 = {
-[18.9031] -         "score" = "5"
-[18.9039] -         "type"  = 1
-[18.9045] -     }
-[18.9050] -     3 = {
-[18.9056] -         "score" = "2"
-[18.9063] -         "type"  = 1
-[18.9076] -     }
-[18.9081] - }
-[25.6484] ----------------------------------------
-[25.6489] LUA ERROR: [string "E:/quick-cocos2d-x/csjob/scripts/app/scenes/MainScene.lua"]:82: attempt to index local 'data' (a nil value)
+[0.2182] [INFO] 
+[0.2186] [INFO] # DEBUG                        = 1
+[0.2194] [INFO] #
+[0.2200] [INFO] # device.platform              = windows
+[0.2204] [INFO] # device.model                 = unknown
+[0.2209] [INFO] # device.language              = cn
+[0.2214] [INFO] # device.writablePath          = D:\wamp\www\quick-cocos2d-x\bin\csjob3\csjob\
+[0.2219] [INFO] # device.cachePath             = D:\wamp\www\quick-cocos2d-x\bin\csjob3\csjob\
+[0.2224] [INFO] # device.directorySeparator    = \
+[0.2230] [INFO] # device.pathSeparator         = ;
+[0.2236] [INFO] #
+[0.2264] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.2269] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+[0.2279] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[0.2286] [INFO] # display.widthInPixels        = 960.00
+[0.2292] [INFO] # display.heightInPixels       = 640.00
+[0.2297] [INFO] # display.contentScaleFactor   = 1.00
+[0.2303] [INFO] # display.width                = 960.00
+[0.2308] [INFO] # display.height               = 640.00
+[0.2314] [INFO] # display.cx                   = 480.00
+[0.2319] [INFO] # display.cy                   = 320.00
+[0.2324] [INFO] # display.left                 = 0.00
+[0.2333] [INFO] # display.right                = 960.00
+[0.2341] [INFO] # display.top                  = 640.00
+[0.2351] [INFO] # display.bottom               = 0.00
+[0.2361] [INFO] # display.c_left               = -480.00
+[0.2366] [INFO] # display.c_right              = 480.00
+[0.2381] [INFO] # display.c_top                = 320.00
+[0.2387] [INFO] # display.c_bottom             = -320.00
+[0.2392] [INFO] #
+[4.2671] ----------------------------------------
+[4.2682] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
 
-[25.6503] 
+[4.2695] 
 stack traceback:
-	[string "E:/quick-cocos2d-x/csjob/scripts/app/scenes/MainScene.lua"]:82: in function 'refushQuestion'
-	[string "E:/quick-cocos2d-x/csjob/scripts/app/scenes/MainScene.lua"]:47: in function '?'
-	?:58: in function <?:38>
-	(tail call): ?
-	?:69: in function <?:41>
-	(tail call): ?
-[25.6518] ----------------------------------------
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.2706] ----------------------------------------
+[4.2720] ----------------------------------------
+[4.2725] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.2741] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.2754] ----------------------------------------
+[4.2766] ----------------------------------------
+[4.2770] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.2780] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.2787] ----------------------------------------
+[4.2968] ----------------------------------------
+[4.3004] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3007] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3013] ----------------------------------------
+[4.3020] ----------------------------------------
+[4.3023] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3026] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3032] ----------------------------------------
+[4.3206] ----------------------------------------
+[4.3212] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3215] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3221] ----------------------------------------
+[4.3386] ----------------------------------------
+[4.3391] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3394] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3399] ----------------------------------------
+[4.3405] ----------------------------------------
+[4.3407] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3410] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3415] ----------------------------------------
+[4.3586] ----------------------------------------
+[4.3592] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3594] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3599] ----------------------------------------
+[4.3772] ----------------------------------------
+[4.3776] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3779] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3784] ----------------------------------------
+[4.3953] ----------------------------------------
+[4.3958] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3961] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3966] ----------------------------------------
+[4.3973] ----------------------------------------
+[4.3975] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.3978] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.3983] ----------------------------------------
+[4.4162] ----------------------------------------
+[4.4166] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[4.4169] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[4.4175] ----------------------------------------
+[5.5707] ----------------------------------------
+[5.5714] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[5.5719] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:114: in function 'reflush'
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:48: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:45>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UIPushButton"]: in main chunk
+[5.5730] ----------------------------------------
+[6.8626] ----------------------------------------
+[6.8633] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.8638] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.8647] ----------------------------------------
+[6.8821] ----------------------------------------
+[6.8827] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.8833] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.8843] ----------------------------------------
+[6.8856] ----------------------------------------
+[6.8861] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.8864] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.8873] ----------------------------------------
+[6.9062] ----------------------------------------
+[6.9068] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9072] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9078] ----------------------------------------
+[6.9086] ----------------------------------------
+[6.9090] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9093] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9099] ----------------------------------------
+[6.9265] ----------------------------------------
+[6.9270] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9273] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9280] ----------------------------------------
+[6.9455] ----------------------------------------
+[6.9460] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9463] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9470] ----------------------------------------
+[6.9478] ----------------------------------------
+[6.9482] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9485] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9491] ----------------------------------------
+[6.9670] ----------------------------------------
+[6.9675] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9678] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9688] ----------------------------------------
+[6.9855] ----------------------------------------
+[6.9861] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: attempt to index a nil value
+
+[6.9865] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:84: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:81>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UISlider"]: in function 'setSliderValue'
+	[string "framework.cc.ui.UISlider"]: in main chunk
+[6.9872] ----------------------------------------
+[7.5896] ----------------------------------------
+[7.5903] LUA ERROR: [string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:111: attempt to index field 'cur_topic_data' (a nil value)
+
+[7.5913] 
+stack traceback:
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:111: in function 'reflush'
+	[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:48: in function <[string "D:/wamp/www/quick-cocos2d-x/bin/csjob3/csjob/scripts/app/scenes/MainScene.lua"]:45>
+	[string "framework.cc.components.behavior.EventProtocol"]: in function 'dispatchEvent'
+	[string "framework.cc.ui.UIPushButton"]: in main chunk
+[7.5923] ----------------------------------------
